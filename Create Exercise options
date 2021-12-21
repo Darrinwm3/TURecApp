@@ -1,0 +1,106 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  Scanner input = new Scanner(System.in);
+   int n;
+
+   System.out.println("1: Bench Press");
+   System.out.println("2: Deadlift");
+   System.out.println("3: Barbell Curls");
+   System.out.println("4: Squats");
+   System.out.println("5: Tricep Extensions");
+   System.out.println("6: Dumbell Hammer Curls");
+   System.out.println("7: Tricep dips");
+   System.out.println("8: Flutter Kicks");
+   System.out.println("9: Incline Bench Press");
+   System.out.println("10: Close Geip Bench Press");
+   System.out.println("11: Sit-Ups");
+   System.out.println("12: Skullcrushers");
+   System.out.println("13: Barbell Row");
+   System.out.println("14: Arnold Press\n");
+   System.out.print("Please enter a number to find out more about the workout: ");
+
+   n = input.nextInt();
+   System.out.println();
+  while(n != 0){
+
+   switch(n){
+     case 1:
+      System.out.println("Bench Press");
+      System.out.println("Average amount of calories burned per set: 80 ");
+      System.out.println("Muscles Used: Chest and Triceps");
+      break;
+    case 2:
+      System.out.println("Deadlift");
+      System.out.println("Average amount of calories burned per set: 60");
+      System.out.println("Muscles Used: Quadriceps");
+      break;
+    case 3:
+      System.out.println("Barbell Curls");
+      System.out.println("Average amount of calories burned per set: 5");
+      System.out.println("Muscles Used: Biceps");
+      break; 
+    case 4:
+      System.out.println("Squats");
+      System.out.println("Average amount of calories burned per set: 35");
+      System.out.println("Muscles Used: Quadriceps");
+      break;
+    case 5:
+      System.out.println("Tricep extensions");
+      System.out.println("Average amount of calories burned per set: 31");
+      System.out.println("Muscles used: Triceps");
+      break; 
+    case 6:
+      System.out.println("Dumbell hammer curls");
+      System.out.println("Average amount of calories burned per set: 36");
+      System.out.println("Muscles Used: Biceps");
+      break;
+    case 7:
+      System.out.println("Tricep dips");
+      System.out.println("Average amount of calores burned per set: 36");
+      System.out.println("Muscles used: Triceps");
+      break;
+    case 8:
+      System.out.println("Flutter kicks");
+      System.out.println("Average amount of calories burned per set: 85");
+      System.out.println("Muscles used: Abdominals");
+      break;
+    case 9:
+      System.out.println("Incline bench press");
+      System.out.println("Average amount of calories burned per set: 85");
+      System.out.println("Muscles used: Upper Chest and Triceps");
+      break;
+    case 10:
+      System.out.println("Close Grip Bench Press");
+      System.out.println("Average amount of calories burned per set: 75");
+      System.out.println("Muscles used: Triceps and Chest");
+      break;
+    case 11:
+      System.out.println("Sit-Ups");
+      System.out.println("Average amount of calories per set: 3");
+      System.out.println("Muscles used: Abdominals");
+      break;
+    case 12:
+      System.out.println("Skullcrushers");
+      System.out.println("Average amount of calories per set: 40");
+      System.out.println("Muscles used: Triceps");
+      break;
+    case 13:
+      System.out.println("Barbell Row");
+      System.out.println("Average amount of calories per set: 40");
+      System.out.println("Muscles used: Back");
+      break;
+    case 14:
+      System.out.println("Arnold Press");
+      System.out.println("Average amount of calories per set: 50");
+      System.out.println("Muscles used: Shoulder Triceps and Deltoids");
+    default:
+      System.out.println("Invalid Entry");
+
+   }
+   System.out.print("\nPlease Enter another value: ");
+   n = input.nextInt();
+   System.out.println();
+  }
+  }
+}
