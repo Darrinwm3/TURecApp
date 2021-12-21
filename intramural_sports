@@ -1,0 +1,55 @@
+import java.util.Scanner;
+//As a user I want to be able to register for intramural sports so that I can secure a spot on a team
+class Main {
+  static boolean stop = false;
+  static int x = 13;
+  
+  public static void main(String[] args) {
+    //static boolean stop = false;
+    //static int x = 13;
+    Scanner input = new Scanner(System.in); 
+    int selection;
+
+    System.out.println("Down Below are the openings for intramural sports for fall 2021: ");
+    
+    while(!stop){
+      displayMenu();
+      selection = input.nextInt(); 
+      _selected(selection);
+  }
+  }
+
+public static void displayMenu(){
+  System.out.println("1 - Tennis \n2 - Pool \n3 - Badminton \n4 - Ping-pong \n5 - Volleyball \n6 - Men’s Rugby Endowment \n7- Men’s Rugby Enhancement \n8 - Women’s Rugby Enhancement \n9 - Women’s Rugby Enhancement \n10 - Men’s Ice Hockey Enhancement \n11 - Women’s Ice Hockey Enhancement \n12 - Men’s Lacrosse Enhancement \n13 - Quit ");
+}
+static void _selected(int x){
+  switch(x){
+    case 1:
+    System.out.println("Welcome to the Tennis Team");break;
+    case 2:
+    System.out.println("Welcome to the Pool Team");break;
+    case 3:
+    System.out.println("Welcome to the Badminton Team");break;
+    case 4:
+    System.out.println("Welcome to the Ping-pong Team");break;
+    case 5:
+    System.out.println("Welcome to the Volleyball Team");break;
+    case 6:
+    System.out.println("Welcome to the Men’s Rugby Endowment Team");break;
+    case 7:
+    System.out.println("Welcome to the Men’s Rugby Enhancement Team");break;
+    case 8:
+    System.out.println("Welcome to the Women’s Rugby Enhancement Team");break;
+    case 9:
+    System.out.println("Welcome to the Women’s Rugby Enhancement Team");break;
+    case 10:
+    System.out.println("Welcome to the Men’s Ice Hockey Enhancement Team");break;
+    case 11:
+    System.out.println("Welcome to the Women’s Ice Hockey Enhancement Team");break;
+    case 12:
+    System.out.println("Welcome to the Men’s Lacrosse Enhancement Team");break;
+    case 13:stop = true; break;
+    default: System.out.println("Choose an option");break;
+  }
+}
+  }
