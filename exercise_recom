@@ -1,0 +1,80 @@
+import java.util.Scanner;
+//As a user, I want to be recommended different workout plans so that I can have better workouts without wasting time researching.
+class Main {
+  
+  public static void main(String[] args) {
+   Scanner input = new Scanner(System.in);
+  // int = x;
+
+    System.out.println("Welcome to our workout planner");
+    
+    System.out.println("Are you  at a (1) beginner, (2)intermeditate or (3)advance level in fitness");
+    int x = input.nextInt();
+
+    while(x!=0){
+      switch(x){
+     //beginner
+      case 1:
+      System.out.println("What is your current weight: ");
+      double lb = input.nextInt();
+      System.out.println("What is your height in inches: ");
+      double height = input.nextDouble();
+
+     double BMI = lb/(height*height);
+      //underweight 
+     if(BMI < 18.5){
+       System.out.println("20 minutes of the following /n Lets start off by a 30 minute walk on the treamill. Our goal is to bulid muscle with strenght training but we first need to activate your muscles");
+       System.out.println("For strenght training reach out to our local trainer for proper form and prep");
+     } else if(BMI >= 18.5 && BMI < 25 ){ //normal weight
+    
+     System.out.println("10-20 minutes of the following /n 1.	Lifting Weights: [Any of the following machines] Chest press machine, Pec deck or chest flye machine, Lat pull-down machine, Low-pulley cable bench, Leg press machine, Leg extension machine and Seated leg curl machine. /n-2.	Swimming /n-3.	Cycling /n-4Stretching (yoga)");
+
+     } else if(BMI >= 25 && BMI < 30){ //overweight
+        System.out.println(" 20- 30 minutes of the following exercises: /n 1.	Lifting Weights: [Any of the following machines] Chest press machine, Pec deck or chest flye machine, Lat pull-down machine, Low-pulley cable bench, Leg press machine, Leg extension machine and Seated leg curl machine. /n-2.	Swimming /n-3.	Cycling /n-4Stretching (yoga)");
+     }
+     break;
+
+     //intermediate
+     case 2: 
+     System.out.println("What is your current weight: ");
+       lb = input.nextDouble();
+      System.out.println("What is your height in inches: ");
+      height = input.nextDouble();
+
+      BMI = lb/(height*height);
+      //underweight 
+     if(BMI < 18.5){
+       System.out.println("Lets start off by a 30 minute walk on the treamill. Our goal is to bulid muscle with strenght training but we first need to activate your muscles");
+       System.out.println("For strenght training reach out to our local trainer for proper form and prep");
+     } else if(BMI >= 18.5 && BMI < 25 ){ //normal weight
+    
+     System.out.println("10-20 minutes of the following /n 1.	Lifting Weights: [Any of the following machines] Chest press machine, Pec deck or chest flye machine, Lat pull-down machine, Low-pulley cable bench, Leg press machine, Leg extension machine and Seated leg curl machine. /n-2.	Swimming /n-3.	Cycling /n-4Stretching (yoga)");
+
+     } else if(BMI >= 25 && BMI < 30){ //overweight
+      System.out.println("1.	Lifting Weights: [Any of the following machines] Chest press machine, Pec deck or chest flye machine, Lat pull-down machine, Low-pulley cable bench, Leg press machine, Leg extension machine and Seated leg curl machine. /n-2.	Swimming /n-3.	Cycling /n-4Stretching (yoga)");
+     }  break;
+     //advance
+     case 3: 
+     System.out.println("What is your current weight: ");
+       lb = input.nextInt();
+      System.out.println("What is your height in inches: ");
+       height = input.nextDouble();
+
+      BMI = lb/(height*height);
+      //underweight 
+     if(BMI < 18.5){
+       System.out.println("Lets start off by a 30 minute walk on the treamill. Our goal is to bulid muscle with strenght training but we first need to activate your muscles");
+       System.out.println("For strenght training reach out to our local trainer for proper form and prep");
+     } else if(BMI >= 18.5 && BMI < 25 ){ //normal weight
+
+     System.out.println("10-20 minutes of the following /n 1.	Lifting Weights: [Any of the following machines] Chest press machine, Pec deck or chest flye machine, Lat pull-down machine, Low-pulley cable bench, Leg press machine, Leg extension machine and Seated leg curl machine. /n-2.	Swimming /n-3.	Cycling /n-4Stretching (yoga");
+
+     } else if(BMI >= 25 && BMI < 30){ //overweight
+     System.out.println("1.	Lifting Weights: [Any of the following machines] Chest press machine, Pec deck or chest flye machine, Lat pull-down machine, Low-pulley cable bench, Leg press machine, Leg extension machine and Seated leg curl machine. /n-2.	Swimming /n-3.	Cycling /n-4Stretching (yoga)");
+     } break;
+      default: 
+     System.out.println("Invalid option");
+    }
+    }
+   }
+}
